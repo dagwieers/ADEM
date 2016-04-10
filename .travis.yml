@@ -7,9 +7,9 @@ before_install:
   # Download and install Arduino
   - wget http://downloads.arduino.cc/arduino-1.6.8-linux64.tar.xz
   - tar -xJf arduino-1.6.8-linux64.tar.xz
-#  - sudo mv arduino-1.6.8 /usr/local/share/arduino
-#  - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
-  - sudo ln -s arduino-1.6.8 /usr/local/share/arduino/arduino /usr/local/bin/arduino
+  - sudo mv arduino-1.6.8 /usr/local/share/arduino
+  - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+#  - sudo ln -sf $PWD/arduino-1.6.8/arduino /usr/local/bin/arduino
 install:
   # Avoid having the hardware directory being picked up by Arduino
   - rm -rf hardware/
