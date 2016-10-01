@@ -63,6 +63,7 @@ void PPD42Sensor::begin() {
     _totalInterruptsPM10 = 0;
     _totalInterruptsPM25 = 0;
 #endif
+
     pinMode(_PPD_PM10_PIN, INPUT);
     pinMode(_PPD_PM25_PIN, INPUT);
     _activated = true;
